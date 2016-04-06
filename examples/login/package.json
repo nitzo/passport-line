@@ -1,0 +1,10 @@
+{
+  "name": "passport-line-examples-login",
+  "version": "0.0.0",
+  "dependencies": {
+    "express": "~3.x",
+    "ejs": ">= 0.0.0",
+    "passport": ">= 0.0.0",
+    "passport-line": ">= 0.0.0"
+  }
+}
