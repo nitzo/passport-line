@@ -18,6 +18,16 @@ vows.describe('LineStrategy').addBatch({
     'should be named line': function (strategy) {
       assert.equal(strategy.name, 'line');
     },
+    'should rejected options.state === false': function() {
+      assert.throws(function () {
+        new LineStrategy({
+          channelID: 'ABC123',
+          channelSecret: 'secret',
+          state: false
+        },
+        function () {});
+      }, Error);
+    }
   },
   
   'strategy when loading user profile': {
@@ -30,7 +40,7 @@ vows.describe('LineStrategy').addBatch({
       
       // mock
       strategy._oauth2.get = function(url, accessToken, callback) {
-        var body = '{"displayName":"Snoop Doggy Dogg","mid":"123456","pictureUrl":""}';
+        var body = '{"displayName":"Snoop Doggy Dogg","userId":"123456","pictureUrl":""}';
         
         callback(null, body, undefined);
       }
