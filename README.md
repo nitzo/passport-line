@@ -1,7 +1,7 @@
 # Passport-Line
 
 [Passport](https://github.com/jaredhanson/passport) strategy for authenticating
-with [Line](http://line.me/) using the OAuth 2.0 API.
+with [Line](http://line.me/) using the OAuth 2.0 API. (Updated to support Line Login v2.1)
 
 This module lets you authenticate using Line in your Node.js applications.
 By plugging into Passport, Line authentication can be easily and
@@ -34,8 +34,6 @@ accepts these credentials and calls `done` providing a user, as well as
       }
     ));
 
-Please note that LINE accepts only some TLDs as valid for callbackURLs. Other TLDs (Including localhost) will not work.
-For a complete list see [here](https://developers.line.me/wp-content/uploads/2016/01/domain_list.txt) or look at the [technical documentation](https://developers.line.me/web-login/technical-configuration)
 
 #### Authenticate Requests
 
@@ -65,6 +63,7 @@ For a complete, working example, refer to the [login example](https://github.com
 ## Credits
 
   - [Nitzan Bar](http://github.com/nitzo)
+  - [Kazuki MATSUDA / 松田一樹](https://github.com/kazuki-ma) (Add LINE login v2.1 support)
   
   
   Special thanks to [Jared Hanson](http://github.com/jaredhanson)!
