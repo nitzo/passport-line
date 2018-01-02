@@ -29,7 +29,7 @@
   ],
   "main": "./lib",
   "dependencies": {
-    "passport-oauth2": "1.x.x"
+    "passport-oauth2": "^1.4.0"
   },
   "devDependencies": {
     "vows": "0.8.x"
@@ -41,5 +41,4 @@
     "node": ">= 0.10.0"
   },
   "homepage": "https://github.com/nitzo/passport-line"
-
 }
