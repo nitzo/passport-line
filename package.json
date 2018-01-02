@@ -32,7 +32,7 @@
     "passport-oauth2": "^1.4.0"
   },
   "devDependencies": {
-    "vows": "0.8.x"
+    "vows": "^0.8.1"
   },
   "scripts": {
     "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
