@@ -72,5 +72,5 @@ For a complete, working example, refer to the [login example](https://github.com
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2015-2016 [Nitzan Bar](http://github.com/nitzo)
+Copyright (c) 2015-2018 [Nitzan Bar](http://github.com/nitzo)
  
