@@ -12,7 +12,7 @@ var LINE_CHANNEL_SECRET = "--insert-line-channel-secret-here--";
 //   serialize users into and deserialize users out of the session.  Typically,
 //   this will be as simple as storing the user ID when serializing, and finding
 //   the user by ID when deserializing.  However, since this example does not
-//   have a database of user records, the complete Line profile is
+//   have a database of user records, the complete LINE profile is
 //   serialized and deserialized.
 passport.serializeUser(function(user, done) {
   done(null, user);
@@ -25,7 +25,7 @@ passport.deserializeUser(function(obj, done) {
 
 // Use the LineStrategy within Passport.
 //   Strategies in Passport require a `verify` function, which accept
-//   credentials (in this case, an accessToken, refreshToken, and Line
+//   credentials (in this case, an accessToken, refreshToken, and LINE
 //   profile), and invoke a callback with a user object.
 passport.use(new LineStrategy({
     channelID: LINE_CHANNEL_ID,
@@ -36,9 +36,9 @@ passport.use(new LineStrategy({
     // asynchronous verification, for effect...
     process.nextTick(function () {
       
-      // To keep the example simple, the user's Line profile is returned to
+      // To keep the example simple, the user's LINE profile is returned to
       // represent the logged-in user.  In a typical application, you would want
-      // to associate the Line account with a user record in your database,
+      // to associate the LINE account with a user record in your database,
       // and return that user instead.
       return done(null, profile);
     });
@@ -82,13 +82,13 @@ app.get('/login', function(req, res){
 
 // GET /auth/line
 //   Use passport.authenticate() as route middleware to authenticate the
-//   request.  The first step in Line authentication will involve
-//   redirecting the user to line.me.  After authorization, Line
+//   request.  The first step in LINE authentication will involve
+//   redirecting the user to line.me.  After authorization, LINE
 //   will redirect the user back to this application at /auth/line/callback
 app.get('/auth/line',
   passport.authenticate('line'),
   function(req, res){
-    // The request will be redirected to Line for authentication, so this
+    // The request will be redirected to LINE for authentication, so this
     // function will not be called.
   });
 
