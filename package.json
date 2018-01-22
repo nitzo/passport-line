@@ -1,7 +1,7 @@
 {
   "name": "passport-line",
   "version": "0.0.2",
-  "description": "Line authentication strategy for Passport.",
+  "description": "LINE authentication strategy for Passport.",
   "keywords": [
     "passport",
     "line",

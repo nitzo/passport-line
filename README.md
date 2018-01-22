@@ -1,10 +1,10 @@
-# Passport-Line
+# Passport-LINE (passport-line)
 
 [Passport](https://github.com/jaredhanson/passport) strategy for authenticating
-with [Line](http://line.me/) using the OAuth 2.0 API. (Updated to support Line Login v2.1)
+with [LINE](http://line.me/) using the OAuth 2.0 API. (Updated to support LINE Login v2.1)
 
-This module lets you authenticate using Line in your Node.js applications.
-By plugging into Passport, Line authentication can be easily and
+This module lets you authenticate using LINE in your Node.js applications.
+By plugging into Passport, LINE authentication can be easily and
 unobtrusively integrated into any application or framework that supports
 [Connect](http://www.senchalabs.org/connect/)-style middleware, including
 [Express](http://expressjs.com/).
@@ -17,7 +17,7 @@ unobtrusively integrated into any application or framework that supports
 
 #### Configure Strategy
 
-The Line authentication strategy authenticates users using a Line
+The LINE authentication strategy authenticates users using a LINE
 account and OAuth 2.0 tokens.  The strategy requires a `verify` callback, which
 accepts these credentials and calls `done` providing a user, as well as
 `options` specifying a channelID, channelSecret, and callback URL.
@@ -72,5 +72,5 @@ For a complete, working example, refer to the [login example](https://github.com
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2015-2016 [Nitzan Bar](http://github.com/nitzo)
+Copyright (c) 2015-2018 [Nitzan Bar](http://github.com/nitzo)
  
